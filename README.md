@@ -5,7 +5,7 @@ This program implements a simple Flask API that predicts the MPG of cars based o
 To get sever up and running:
 1. Download files
 2. Change your current directory to the Docker folder in the downloaded files
-3. Enter `docker-compose up`in the terminal
+3. Enter `docker-compose up --build`in the terminal
 4. To check that the server is running enter `curl http://localhost:5000/`, you should get a list of variables that you can use for prediction
 5. You can now ask the API to run predictions with json requets. Here is a sample request `curl -H "Content-Type: application/json" -X POST -d '{"cyl":"6","am":"0"}' "http://localhost:5000/predict_price"`
  
